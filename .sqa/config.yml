@@ -1,0 +1,66 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.9
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/IdentityPython/SATOSA:
+      branch: master
+      repo: https://github.com/IdentityPython/SATOSA.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/IdentityPython/SATOSA git:
+        commands:
+        - /usr/bin/env sh .sqa/script.geeky-linen-millipede.sh
+        container: qc.acc_scaly-amber-bandicoot
+  QC.Doc:
+    repos:
+      github.com/IdentityPython/SATOSA find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.woozy-seashell-duck.sh
+        container: qc.doc_breezy-firebrick-rattlesnake
+      github.com/IdentityPython/SATOSA git:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaky-periwinkle-emu.sh
+        container: qc.doc_boozy-sapphire-dalmatian
+      github.com/IdentityPython/SATOSA markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-fuchsia-angelfish.sh
+        container: qc.doc_woolly-beige-booby
+      github.com/IdentityPython/SATOSA restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.blurry-orange-moth.sh
+        container: qc.doc_jumpy-blue-chicken
+  QC.Lic:
+    repos:
+      github.com/IdentityPython/SATOSA licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.skanky-russet-weasel.sh
+        container: qc.lic_sleepy-pear-mist
+  QC.Sec:
+    repos:
+      github.com/IdentityPython/SATOSA bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-green-jellyfish.sh
+        container: qc.sec_hazy-persimmon-spitz
+  QC.Sty:
+    repos:
+      github.com/IdentityPython/SATOSA flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-silver-wrasse.sh
+        container: qc.sty_wimpy-wheat-jaguar
+      github.com/IdentityPython/SATOSA hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.stinky-olive-kakapo.sh
+        container: qc.sty_wimpy-amethyst-giraffe
+  QC.Ver:
+    repos:
+      github.com/IdentityPython/SATOSA get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.seedy-lime-vole.sh
+        container: qc.ver_whiny-azure-barb
+timeout: 5400
