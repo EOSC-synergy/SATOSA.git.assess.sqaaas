@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/IdentityPython/SATOSA git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-zucchini-snake.sh
-        container: qc.acc_ugly-mustard-maltese
+        - /usr/bin/env sh .sqa/script.woolly-malachite-worm.sh
+        container: qc.acc_slimy-buff-spoonbill
   QC.Doc:
     repos:
       github.com/IdentityPython/SATOSA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-buff-tamarin.sh
-        container: qc.doc_hilly-azure-sloth
+        - /usr/bin/env sh .sqa/script.stealthy-violet-caiman.sh
+        container: qc.doc_baggy-rust-kudu
       github.com/IdentityPython/SATOSA git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-heliotrope-flounder.sh
-        container: qc.doc_greasy-cream-sparrow
+        - /usr/bin/env sh .sqa/script.greasy-amethyst-fish.sh
+        container: qc.doc_grumpy-ruby-lobster
       github.com/IdentityPython/SATOSA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-gamboge-mastiff.sh
-        container: qc.doc_boozy-ochre-bonobo
+        - /usr/bin/env sh .sqa/script.pokey-chartreuse-elephant.sh
+        container: qc.doc_slaphappy-cerulean-monster
       github.com/IdentityPython/SATOSA restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-magenta-opossum.sh
-        container: qc.doc_breezy-copper-pig
+        - /usr/bin/env sh .sqa/script.cozy-lime-skunk.sh
+        container: qc.doc_tacky-aquamarine-foxhound
   QC.Lic:
     repos:
       github.com/IdentityPython/SATOSA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-myrtle-starfish.sh
-        container: qc.lic_muzzy-mauve-rat
+        - /usr/bin/env sh .sqa/script.clammy-puce-lizard.sh
+        container: qc.lic_thirsty-russet-dragonfly
   QC.Sec:
     repos:
       github.com/IdentityPython/SATOSA bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-orchid-dingo.sh
-        container: qc.sec_woolly-cream-beaver
+        - /usr/bin/env sh .sqa/script.scummy-malachite-malamute.sh
+        container: qc.sec_muzzy-tangerine-oyster
   QC.Sty:
     repos:
       github.com/IdentityPython/SATOSA flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-periwinkle-ibis.sh
-        container: qc.sty_woozy-lilac-rottweiler
+        - /usr/bin/env sh .sqa/script.dorky-tangerine-harrier.sh
+        container: qc.sty_silly-plum-seal
       github.com/IdentityPython/SATOSA hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-celadon-salamander.sh
-        container: qc.sty_clammy-tomato-opossum
+        - /usr/bin/env sh .sqa/script.chewy-rust-tamarin.sh
+        container: qc.sty_grumpy-wisteria-pig
   QC.Uni:
     repos:
       github.com/IdentityPython/SATOSA tox:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-purple-owl.sh
-        container: qc.uni_hasty-auburn-cichlid
+        - /usr/bin/env sh .sqa/script.shaggy-russet-panda.sh
+        container: qc.uni_breezy-orchid-greyhound
   QC.Ver:
     repos:
       github.com/IdentityPython/SATOSA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-champagne-slug.sh
-        container: qc.ver_shabby-saffron-axolotl
+        - /usr/bin/env sh .sqa/script.messy-flax-forest.sh
+        container: qc.ver_scummy-lilac-sloth
 timeout: 5400
