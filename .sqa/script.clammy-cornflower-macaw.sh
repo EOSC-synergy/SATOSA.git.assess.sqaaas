@@ -5,5 +5,5 @@
 
 (
 cd github.com/IdentityPython/SATOSA &&
-    tox -c tox.ini -e
+    pytest  --json-report  --json-report-indent 4
 )
