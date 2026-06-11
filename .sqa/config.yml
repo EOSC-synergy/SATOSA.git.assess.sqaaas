@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/IdentityPython/SATOSA:
       branch: master
@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/IdentityPython/SATOSA git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-brown-dragonfly.sh
-        container: qc.acc_pasty-tan-devil
+        - /usr/bin/env sh .sqa/script.sunset_devoted_llama.sh
+        container: qc.acc_cosmos_apathetic_python
   QC.Doc:
     repos:
       github.com/IdentityPython/SATOSA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-tan-dugong.sh
-        container: qc.doc_cheeky-purple-hippopotamus
+        - /usr/bin/env sh .sqa/script.prussian_tactful_coyote.sh
+        container: qc.doc_fern_bubbly_gull
       github.com/IdentityPython/SATOSA git:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-goldenrod-bongo.sh
-        container: qc.doc_nippy-aqua-owl
+        - /usr/bin/env sh .sqa/script.cloud_sarcastic_elephant.sh
+        container: qc.doc_blush_methodical_angelfish
       github.com/IdentityPython/SATOSA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-puce-bee.sh
-        container: qc.doc_clammy-vermilion-gibbon
+        - /usr/bin/env sh .sqa/script.crimson_stubborn_uakari.sh
+        container: qc.doc_taupe_outgoing_eagle
       github.com/IdentityPython/SATOSA restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-viridian-pinscher.sh
-        container: qc.doc_freaky-cardinal-anteater
+        - /usr/bin/env sh .sqa/script.taupe_reckless_dingo.sh
+        container: qc.doc_lapis_courageous_gull
   QC.Lic:
     repos:
       github.com/IdentityPython/SATOSA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-brass-peccary.sh
-        container: qc.lic_sleazy-red-penguin
+        - /usr/bin/env sh .sqa/script.verdant_balanced_lionfish.sh
+        container: qc.lic_apricot_reckless_hawk
   QC.Sec:
     repos:
       github.com/IdentityPython/SATOSA bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-purple-ray.sh
-        container: qc.sec_cozy-seashell-woodlouse
+        - /usr/bin/env sh .sqa/script.fandango_honest_toad.sh
+        container: qc.sec_lime_adventurous_goat
   QC.Sty:
     repos:
       github.com/IdentityPython/SATOSA flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-heliotrope-tarantula.sh
-        container: qc.sty_slimy-copper-eleuth
+        - /usr/bin/env sh .sqa/script.ivory_dramatic_kookaburra.sh
+        container: qc.sty_aquamarine_tough_kookaburra
       github.com/IdentityPython/SATOSA hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-bistre-bat.sh
-        container: qc.sty_cloudy-copper-grouse
+        - /usr/bin/env sh .sqa/script.bronze_amused_bear.sh
+        container: qc.sty_slate_artistic_ibex
   QC.Uni:
     repos:
       github.com/IdentityPython/SATOSA pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-brass-rabbit.sh
-        container: qc.uni_lumpy-chocolate-dormouse
+        - /usr/bin/env sh .sqa/script.cyan_bright_stingray.sh
+        container: qc.uni_hunter_impulsive_moose
   QC.Ver:
     repos:
       github.com/IdentityPython/SATOSA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-apricot-birman.sh
-        container: qc.ver_gloppy-bronze-okapi
+        - /usr/bin/env sh .sqa/script.turquoise_cranky_mongoose.sh
+        container: qc.ver_pineapple_sociable_tarantula
 timeout: 5400
